@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_project_template_arch/widgets/atom/text/text_base.dart';
+part of '../demo_feature_view.dart';
 
 class DemoFeatureScreen extends StatefulWidget {
   const DemoFeatureScreen({super.key});
@@ -11,12 +10,34 @@ class DemoFeatureScreen extends StatefulWidget {
 class _DemoFeatureScreenState extends State<DemoFeatureScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const TextBase(label: 'Demo Feature',),
-      ),
-      body: const Center(
-        child: TextBase(label: 'This is demo',),
+    return BlocListener<DemoFeatureCubit, DemoFeatureState>(
+      listener: (context, state) {
+        if (state.demoState == ViewState.loading) {
+          // Loading Action
+        } else if (state.demoState == ViewState.success) {
+          // Success Action
+        }
+      },
+      child: Scaffold(
+        appBar: AppBar(title: const TextBase(label: 'Demo Feature')),
+        body: Center(
+          child: BlocSelector<DemoFeatureCubit, DemoFeatureState, ViewState>(
+            selector: (state) {
+              return state.demoState;
+            },
+            builder: (context, state) {
+              if(state == ViewState.loading) {
+                return TextBase(label: 'loaidng...');
+              }
+              else if(state == ViewState.success) {
+                return TextBase(label: 'This is demo page');
+              }
+              else {
+                return TextBase(label: 'Error');
+              }
+            },
+          ),
+        ),
       ),
     );
   }
