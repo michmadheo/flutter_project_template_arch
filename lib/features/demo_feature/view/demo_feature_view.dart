@@ -13,7 +13,7 @@ class DemoFeatureView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => DemoFeatureCubit()..demoCubitFunction(),
+      create: (context) => DemoFeatureCubit()..demoCubitApiFunction(),
       child: DemoFeatureScreen(),
     );
   }
