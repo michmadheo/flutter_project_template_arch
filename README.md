@@ -1,16 +1,29 @@
-# flutter_project_template_arch
+# Flutter Project Template
 
-A new Flutter project.
+A Template to start Flutter app development with minimal effort
 
-## Getting Started
+## Requirements
 
-This project is a starting point for a Flutter application.
+These are the requirements to run this project:
 
-A few resources to get you started if this is your first Flutter project:
+- Java minimum version 17
+- Flutter version 3.32.5
+- dart version 3.8.1
+- Android Studio version Meerkat 2024.3.1
+- Xcode up to version 16.4
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Ready to develop?
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Change your package name:
+
+```bash
+dart run change_app_package_name:main com.new.package.name
+```
+
+Search for "flutter_project_template_arch" and rename it to your repository name
+
+Load an .env file in root project and do:
+
+```bash
+dart run build_runner build
+```
