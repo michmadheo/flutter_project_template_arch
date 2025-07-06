@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_project_template_arch/core/dependencies/injection.dart';
 import 'package:flutter_project_template_arch/core/services/api_fetch/api_fetch.dart';
 import 'package:flutter_project_template_arch/navigation/router.dart';
 
@@ -9,8 +10,11 @@ void main() async {
   /// Initialize Device Orientation
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
+  /// Initialize Dependency Injection
+  Injection().initializeDependencyInjection();
+
   /// Initialize Dio
-  ApiFetch.initializeDio();
+  getIt<ApiFetch>().initializeDio();
   
   runApp(const MyApp());
 }

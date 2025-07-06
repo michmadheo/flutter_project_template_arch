@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 class ApiFetch {
   static late Dio dio;
 
-  static void initializeDio() {
+  void initializeDio() {
     dio =
         Dio(
             BaseOptions(
@@ -28,7 +28,7 @@ class ApiFetch {
           ]);
   }
 
-  static Future<dynamic> getApi({
+  Future<dynamic> getApi({
     required String url,
     Map<String, dynamic>? params,
     Map<String, dynamic>? additionalHeaders,
@@ -49,7 +49,7 @@ class ApiFetch {
     }
   }
 
-  static Future<dynamic> postApi({
+  Future<dynamic> postApi({
     required String url,
     Map<String, dynamic>? body,
     Map<String, dynamic>? params,
@@ -72,7 +72,7 @@ class ApiFetch {
     }
   }
 
-  static Future<dynamic> putApi({
+  Future<dynamic> putApi({
     required String url,
     Map<String, dynamic>? body,
     Map<String, dynamic>? params,
@@ -95,7 +95,7 @@ class ApiFetch {
     }
   }
 
-  static Future<dynamic> deleteApi({
+  Future<dynamic> deleteApi({
     required String url,
     Map<String, dynamic>? body,
     Map<String, dynamic>? params,

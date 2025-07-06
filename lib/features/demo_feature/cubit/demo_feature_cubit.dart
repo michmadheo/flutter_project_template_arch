@@ -6,7 +6,10 @@ import 'package:flutter_project_template_arch/features/demo_feature/repository/d
 part 'demo_feature_state.dart';
 
 class DemoFeatureCubit extends Cubit<DemoFeatureState> {
-  DemoFeatureCubit() : super(DemoFeatureState.initial());
+
+  final DemoFeatureRepository repository;
+
+  DemoFeatureCubit({required this.repository}) : super(DemoFeatureState.initial());
 
   /// This function is just for demo purposes to show how to use the cubit.
   void demoCubitFunction() {
@@ -21,7 +24,7 @@ class DemoFeatureCubit extends Cubit<DemoFeatureState> {
   void demoCubitApiFunction() async {
     emit(state.copyWith(demoState: ViewState.loading));
 
-    final result = await DemoFeatureRepository().getDemoData();
+    final result = await repository.getDemoData();
     result.match(
       (failure) {
         emit(state.copyWith(demoState: ViewState.error));

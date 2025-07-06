@@ -5,9 +5,13 @@ import 'package:flutter_project_template_arch/core/services/api_fetch/api_fetch.
 import 'package:fpdart/fpdart.dart';
 
 class DemoData {
+  final ApiFetch apiFetch;
+
+  DemoData({required this.apiFetch});
+
   ApiResult<DemoDataResponse> fetchDemoData() async {
     try {
-      final data = await ApiFetch.getApi(url: 'https://reactnative.dev/movies.json');
+      final data = await apiFetch.getApi(url: 'https://reactnative.dev/movies.json');
       DemoDataResponse response = DemoDataResponse.fromJson(data);
       return Right(response);
     } catch (e) {

@@ -4,8 +4,12 @@ import 'package:flutter_project_template_arch/core/data/remote/demo_data/dto/dem
 import 'package:fpdart/fpdart.dart';
 
 class DemoFeatureRepository {
+  final DemoData demoData;
+
+  DemoFeatureRepository({required this.demoData});
+  
   ApiResult<DemoDataResponse> getDemoData() async {
-    final result = await DemoData().fetchDemoData();
+    final result = await demoData.fetchDemoData();
     return result.match(
       (failure) => Either.left(failure),
       (success) => Either.right(success),

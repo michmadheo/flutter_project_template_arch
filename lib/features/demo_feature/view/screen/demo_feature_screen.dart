@@ -27,13 +27,13 @@ class _DemoFeatureScreenState extends State<DemoFeatureScreen> {
             },
             builder: (context, state) {
               if(state == ViewState.loading) {
-                return TextBase(label: 'loaidng...');
+                return TextBase(label: 'loading demo data...');
               }
               else if(state == ViewState.success) {
-                return TextBase(label: 'This is demo page');
+                return TextBase(label: 'Demo data loaded successfully!');
               }
               else {
-                return TextBase(label: 'Error');
+                return TextBase(label: 'Error loading demo data.');
               }
             },
           ),
