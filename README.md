@@ -27,3 +27,11 @@ Load an .env file in root project and do:
 ```bash
 dart run build_runner build
 ```
+
+## Run the app
+
+To run the app, do:
+
+```bash
+flutter run lib/main.dart
+```
