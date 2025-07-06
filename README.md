@@ -33,5 +33,5 @@ dart run build_runner build
 To run the app, do:
 
 ```bash
-flutter run lib/main.dart
+flutter run
 ```
