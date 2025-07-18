@@ -15,7 +15,7 @@ class ScreenSizeUtil {
     _screenHeight = MediaQuery.of(context).size.height;
     _statusBarHeight = MediaQuery.of(context).viewPadding.top;
     _bottomBarHeight = MediaQuery.of(context).viewPadding.bottom;
-    _isTablet = MediaQuery.of(context).size.width >= 600;
+    _isTablet = MediaQuery.of(context).size.width >= Config.tabletScreenWidth;
     if (_isTablet) {
       Config.defaultScreenWidth = Config.tabletScreenWidth;
       Config.defaultScreenHeight = Config.tabletScreenHeight;
