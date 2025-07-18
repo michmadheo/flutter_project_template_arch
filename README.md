@@ -6,23 +6,23 @@
 
 To ease your project setup, here you can find:
 
-✅ Swift Navigation & routing with [go_router](https://pub.dev/packages/go_router)
-✅ Safe environment configuration with [envied](https://pub.dev/packages/envied)
-✅ Robust API Fetching with [dio](https://pub.dev/packages/dio)
-✅ Easy to use [bloc](https://pub.dev/packages/flutter_bloc) design pattern (see [demo_feature](lib/features/demo_feature) for example)
-✅ "Functional" functional programming with [fpdart](https://pub.dev/packages/fpdart)
-✅ Simple & reliable local data source storage with [shared_preferences](https://pub.dev/packages/shared_prefences)
-✅ Precise object models with [equatable](https://pub.dev/packages/equatable)
-✅ Manageable dependency injection with [get_it](https://pub.dev/packages/get_it)
-✅ Assortment of ready-to-use themes for styling (see [themes](lib/themes) for example)
-✅ Helpful utilities and extensions (see [general_helpers](lib/core/general_helpers) for example)
-✅ Structured atomic design pattern for widgets (see [widgets](lib/widgets) for example)
+- ✅ Swift Navigation & routing with [go_router](https://pub.dev/packages/go_router)
+- ✅ Safe environment configuration with [envied](https://pub.dev/packages/envied)
+- ✅ Robust API Fetching with [dio](https://pub.dev/packages/dio)
+- ✅ Easy to use [bloc](https://pub.dev/packages/flutter_bloc) design pattern (see [demo_feature](lib/features/demo_feature) for example)
+- ✅ "Functional" functional programming with [fpdart](https://pub.dev/packages/fpdart)
+- ✅ Simple & reliable local data source storage with [shared_preferences](https://pub.dev/packages/shared_prefences)
+- ✅ Precise object models with [equatable](https://pub.dev/packages/equatable)
+- ✅ Manageable dependency injection with [get_it](https://pub.dev/packages/get_it)
+- ✅ Assortment of ready-to-use themes for styling (see [themes](lib/themes) for example)
+- ✅ Helpful utilities and extensions (see [general_helpers](lib/core/general_helpers) for example)
+- ✅ Structured atomic design pattern for widgets (see [widgets](lib/widgets) for example)
 
 Ready to give your project identities? here you can:
 
-✅ Change package name with [change_app_package_name](https://pub.dev/packages/change_app_package_name)
-✅ Change app icon with [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons)
-✅ Change app name by replacing the label... because, why not? 🧐
+- ✅ Change package name with [change_app_package_name](https://pub.dev/packages/change_app_package_name)
+- ✅ Change app icon with [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons)
+- ✅ Change app name by replacing the label... because, why not? 🧐
 
 Check the [pubspec.yaml](pubspec.yaml) for packages versions.
 
