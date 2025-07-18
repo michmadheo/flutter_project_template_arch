@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_template_arch/general_helpers/extensions/dynamic_size_extension.dart';
+import 'package:flutter_project_template_arch/core/general_helpers/extensions/dynamic_size_extension.dart';
 
 class ThemePadding {
   const ThemePadding._();
