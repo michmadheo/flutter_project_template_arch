@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_template_arch/themes/fonts/theme_fonts.dart';
 
 class TextBase extends StatelessWidget {
   final String label;
@@ -35,6 +36,10 @@ class TextBase extends StatelessWidget {
         maxLines: maxLines,
         softWrap: softWrap,
         overflow: overflow,
+        style: ThemeFonts.defaultTextBase
+            .merge(TextStyle(color: color))
+            .merge(style)
+            .merge(ThemeFonts.fh1_5),
       ),
     );
   }
