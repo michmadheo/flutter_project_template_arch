@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_project_template_arch/core/config/config.dart';
+import 'package:flutter_project_template_arch/themes/device_dimension/theme_device_dimension.dart';
 
 class ScreenSizeUtil {
   ScreenSizeUtil._();
@@ -15,10 +15,14 @@ class ScreenSizeUtil {
     _screenHeight = MediaQuery.of(context).size.height;
     _statusBarHeight = MediaQuery.of(context).viewPadding.top;
     _bottomBarHeight = MediaQuery.of(context).viewPadding.bottom;
-    _isTablet = MediaQuery.of(context).size.width >= Config.tabletScreenWidth;
+    _isTablet =
+        MediaQuery.of(context).size.width >=
+        ThemeDeviceDimension.tabletScreenWidth;
     if (_isTablet) {
-      Config.defaultScreenWidth = Config.tabletScreenWidth;
-      Config.defaultScreenHeight = Config.tabletScreenHeight;
+      ThemeDeviceDimension.defaultScreenWidth =
+          ThemeDeviceDimension.tabletScreenWidth;
+      ThemeDeviceDimension.defaultScreenHeight =
+          ThemeDeviceDimension.tabletScreenHeight;
     }
   }
 
