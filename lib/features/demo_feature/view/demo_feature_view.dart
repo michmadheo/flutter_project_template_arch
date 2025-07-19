@@ -4,13 +4,19 @@ import 'package:flutter_project_template_arch/core/common/view_state/view_state.
 import 'package:flutter_project_template_arch/core/dependencies/injection.dart';
 import 'package:flutter_project_template_arch/features/demo_feature/cubit/demo_feature_cubit.dart';
 import 'package:flutter_project_template_arch/features/demo_feature/repository/demo_feature_repository.dart';
+import 'package:flutter_project_template_arch/navigation/object/demo_navigation_object.dart';
 import 'package:flutter_project_template_arch/widgets/atom/text/text_base.dart';
 
 // Screen
 part 'screen/demo_feature_screen.dart';
 
 class DemoFeatureView extends StatelessWidget {
-  const DemoFeatureView({super.key});
+  final DemoNavigationObject? extra;
+
+  const DemoFeatureView({
+    super.key,
+    this.extra,
+  });
 
   @override
   Widget build(BuildContext context) {
