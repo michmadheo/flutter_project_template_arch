@@ -4,24 +4,30 @@ import 'package:flutter_project_template_arch/assets/colors/asset_colors.dart';
 class ThemeSystemMode {
   ThemeSystemMode._();
 
+  // Device mode
   static ThemeMode light = ThemeMode.light;
   static ThemeMode dark = ThemeMode.dark;
   static ThemeMode system = ThemeMode.system;
 
+  // Brightness mode
+  static Brightness lightBrightness = Brightness.light;
+  static Brightness darkBrightness = Brightness.dark;
+
+  // Mode configuration
   static ThemeData lightConfig = ThemeData(
-    brightness: Brightness.light,
+    brightness: lightBrightness,
     colorScheme: ColorScheme.fromSeed(
       seedColor: AssetColors.white,
-      brightness: Brightness.light,
+      brightness: lightBrightness,
     ),
     useMaterial3: true,
   );
 
   static ThemeData darkConfig = ThemeData(
-    brightness: Brightness.dark,
+    brightness: darkBrightness,
     colorScheme: ColorScheme.fromSeed(
       seedColor: AssetColors.grey,
-      brightness: Brightness.dark,
+      brightness: darkBrightness,
     ),
     useMaterial3: true,
   );
