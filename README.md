@@ -2,6 +2,14 @@
 
 > A Template to start Flutter app development with minimal effort. Introducing the "Arch".
 
+## Quick Start 🎮
+
+```bash
+git clone https://github.com/michmadheo/flutter_project_template_arch.git
+```
+
+Or download via [releases](https://github.com/michmadheo/flutter_project_template_arch/releases).
+
 ## What's included 🚀
 
 To ease your project setup, here you can find:
