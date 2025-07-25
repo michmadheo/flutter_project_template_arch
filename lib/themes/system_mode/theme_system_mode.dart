@@ -16,8 +16,8 @@ class ThemeSystemMode {
   // Mode configuration
   static ThemeData lightConfig = ThemeData(
     brightness: lightBrightness,
-    colorScheme: ColorScheme.fromSeed(
-      seedColor: AssetColors.white,
+    colorScheme: ColorScheme.light(
+      primary: AssetColors.white,
       brightness: lightBrightness,
     ),
     useMaterial3: true,
@@ -25,8 +25,8 @@ class ThemeSystemMode {
 
   static ThemeData darkConfig = ThemeData(
     brightness: darkBrightness,
-    colorScheme: ColorScheme.fromSeed(
-      seedColor: AssetColors.grey,
+    colorScheme: ColorScheme.dark(
+      primary: AssetColors.grey,
       brightness: darkBrightness,
     ),
     useMaterial3: true,
